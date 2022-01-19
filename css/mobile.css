@@ -1,0 +1,42 @@
+/*
+forma de generar los estilos  en este proyecto 
+1. posicionamiento
+2. modelo de caja (box model)
+3. tipografia 
+4. visuales 
+5. otros
+*/
+
+:root {
+    /* fonts */
+    --dm-sans: 'DM Sans', sans-serif;
+    --inter: 'Inter', sans-serif;
+    --sm:400;
+    --md:500;
+    --lg:700;
+    /* colors */
+    --bitcoin-orange: #f7931A;
+    --soft-orange:#FFE9D5;
+    --secundary-blue:#1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --black:#282623;
+    --gray: #BABABA;
+    --off-white:#FAF8F7;
+    --just-white:#FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--dm-sans);
+}
+
+
+
+
