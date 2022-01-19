@@ -37,6 +37,33 @@ html {
     font-family: var(--dm-sans);
 }
 
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* el width no se va a hacer mas chico de 320px */
+    min-width: 32rem;
+    height: 33.4rem;
+    text-align: center;
+}
 
+header img {
+    width: 15rem;
+    height: 2.4rem;
+    margin-top: 0;
+    /* esta es la forma de centrar un elemento con flex */
+    align-self: center;
+}
 
+.header--title-container {
+    width: 90%;
+    min-width: 28.8rem ;
+    max-width: 90rem;
+    height: 21.8rem;
+    margin-top: 4rem;
+    text-align: center;
+    align-self: center;
+}
 
