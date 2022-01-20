@@ -167,13 +167,22 @@ main {
     margin-bottom: 3rem;
 }
 
+.main-tables-container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table {
     width: 70%;
+    scroll-snap-align: center;
     min-width: 23.5rem;
     max-width: 50rem;
     height: 36rem;
     margin: 0 auto;
-    font-family: var(--inter);   
+    font-family: var(--inter);
+    margin-left: 6rem;   
 }
 
 .main-currency-table .currency-table--title {
@@ -279,7 +288,8 @@ main {
     height: 36rem;
     margin: 0 auto;
     font-family: var(--inter);   
-    display: none;
+    margin-left: 6rem;
+    margin-right: 4rem;   
 }
 
 .currency-table--title-second {
@@ -568,7 +578,7 @@ main {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 23rem;
+    min-width: 19rem;
     max-width: 30rem;
     height: 27rem;
     margin: 5rem 20px 0;
@@ -609,15 +619,16 @@ main {
     font-weight: var(--lg);
     line-height: 6.3rem;
     color: black;
+    margin-top: 1.5rem;
+
 }
 
 .plan-card--price span {
-    position: absolute;
-    margin-top: 5px;
-    right: 136px;
     font-size: 1.2rem;
     font-weight: var(--md);
     line-height: 1.5rem;
+    vertical-align: top;
+    margin-right: -5px;
 }
 
 .plan-card-arrow{
@@ -670,10 +681,10 @@ main {
 .plans-container-card-two {
     position: relative;
     width: 70%;
-    min-width: 23rem;
+    min-width: 19rem;
     max-width: 30rem;
     height: 27rem;
-    margin: 5rem 20px 0;
+    margin: 5rem -2px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 1.5rem;
@@ -711,15 +722,15 @@ main {
     font-weight: var(--lg);
     line-height: 6.3rem;
     color: black;
+    margin-top: 1.5rem;
 }
 
 .plan-card--price-two span {
-    position: absolute;
-    margin-top: 5px;
-    right: 136px;
     font-size: 1.2rem;
     font-weight: var(--md);
     line-height: 1.5rem;
+    vertical-align: top;
+    margin-right: -5px;
 }
 
 .plan-card-arrow-two{
@@ -781,7 +792,7 @@ main {
 .plans-container-card-three {
     position: relative;
     width: 70%;
-    min-width: 23rem;
+    min-width: 19rem;
     max-width: 30rem;
     height: 27rem;
     margin: 5rem 20px 0;
@@ -822,15 +833,16 @@ main {
     font-weight: var(--lg);
     line-height: 6.3rem;
     color: black;
+    margin-top: 1.5rem;
 }
 
 .plan-card--price-three span {
-    position: absolute;
-    margin-top: 5px;
-    right: 136px;
     font-size: 1.2rem;
     font-weight: var(--md);
     line-height: 1.5rem;
+    text-align: right;
+    vertical-align: top;
+    margin-right: -5px;
 }
 
 .plan-card-arrow-three{
@@ -880,4 +892,45 @@ main {
     height: 2rem;
     background-image: url('../assets/icons/arrow-right.svg');
     vertical-align: text-bottom;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: var(--md);
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+footer .rigth {
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    font-weight: var(--md);
+    line-height: 1.8rem;
+    margin-top: 8px;
+    color: var(--just-white);
+
 }
